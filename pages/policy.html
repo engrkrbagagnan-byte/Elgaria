@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies - ELGARIA Timepieces</title>
+    <meta name="description" content="Shipping, returns, warranty and privacy policies for ELGARIA Timepieces. Read our store policies for secure purchases and service." />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-3xl font-serif-luxury tracking-wider"><a href="index.html">ELGARIA</a></h1>
+            <nav class="hidden md:flex space-x-8 text-lg font-light">
+                <a href="catalog.html" class="hover:text-amber-50">Catalog</a>
+                <a href="#" class="hover:text-amber-50">Brands</a>
+                <a href="contact.html" class="hover:text-amber-50">Contact</a>
+            </nav>
+            <div class="text-xl flex items-center">
+                <button id="cart-button" aria-label="Open cart" class="flex items-center focus:outline-none focus:ring-2 focus:ring-amber-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6.1A1 1 0 007 21h10a1 1 0 00.98-.8L20 13M7 13L5.4 5" />
+                    </svg>
+                    <span id="cart-count" class="cart-badge" style="display:none">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="max-w-4xl mx-auto p-6 lg:p-12 bg-white rounded-lg shadow-xl mt-12" role="main" aria-labelledby="policy-heading">
+        <h1 id="policy-heading" class="text-5xl font-serif-luxury text-blue-900 mb-6 border-b pb-4">Our Commitment to You</h1>
+
+        
+    <div class="space-y-8">
+            <section aria-labelledby="shipping-heading">
+                <h2 id="shipping-heading" class="text-3xl font-serif-luxury text-blue-900 mb-3">Shipping & Delivery</h2>
+                <p class="text-lg text-gray-600 mb-2">We ensure secure and timely delivery for every timepiece.</p>
+                <p class="text-gray-700">Orders are processed within 1–2 business days. Delivery is handled by trusted couriers and tracking information will be emailed once your order ships.</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 bg-amber-50 p-4 rounded-md">
+                    <li>Metro Manila: 2–4 business days.</li>
+                    <li>Luzon: 3–7 business days.</li>
+                    <li>Visayas & Mindanao: 5–10 business days.</li>
+                </ul>
+                <p class="text-gray-700">Please inspect your package upon delivery and report any shipping damage within 48 hours.</p>
+            </section>
+
+            <section aria-labelledby="returns-heading">
+                <h2 id="returns-heading" class="text-3xl font-serif-luxury text-blue-900 mb-3">Returns & Exchanges</h2>
+                <p class="text-lg text-gray-600 mb-2">Your satisfaction is important to us.</p>
+                <p class="text-gray-700">Returns are accepted within 7 days from delivery for unused items only. The product must include all original packaging, tags, and protective films. Please contact support to request a return authorization and instructions.</p>
+                <p class="text-gray-700">Return shipping is the responsibility of the buyer unless the return is due to a confirmed seller error. We recommend using an insured courier and retaining tracking information.</p>
+            </section>
+
+            <section aria-labelledby="warranty-heading">
+                <h2 id="warranty-heading" class="text-3xl font-serif-luxury text-blue-900 mb-3">Product Warranty</h2>
+                <p class="text-lg text-gray-600 mb-2">We stand behind the craftsmanship of our watches.</p>
+                <p class="text-gray-700">Our limited warranty covers manufacturing defects for 7 days from delivery. It does not cover damage resulting from water exposure (unless specified), scratches, misuse, or accidental damage. To file a warranty claim, provide clear photo or video evidence taken at the moment of unboxing and contact our support team.</p>
+            </section>
+
+            <section aria-labelledby="privacy-heading">
+                <h2 id="privacy-heading" class="text-3xl font-serif-luxury text-blue-900 mb-3">Privacy Policy</h2>
+                <p class="text-lg text-gray-600 mb-2">We respect your privacy.</p>
+                <p class="text-gray-700">We collect only the information necessary to process orders and communicate with you. We do not sell your personal data. For full details, or to request deletion or export of your information, contact our support team.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6 mt-12">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            &copy; 2025 ELGARIA Timepieces. <a href="policy.html" class="hover:text-white">Policies</a>.
+        </div>
+    </footer>
+
+    <!-- Cart overlay + drawer -->
+    <div id="cart-overlay"></div>
+    <aside id="cart-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cart-title" class="">
+        <div class="cart-header flex items-center justify-between">
+            <h3 id="cart-title" class="text-lg font-semibold">Your Cart</h3>
+            <button id="cart-close" aria-label="Close cart" class="text-gray-500 hover:text-gray-800">✕</button>
+        </div>
+        <div class="cart-body"></div>
+        <div class="cart-footer">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-sm text-gray-600">Subtotal</span>
+                <strong id="cart-subtotal">$0.00</strong>
+            </div>
+            <div class="space-y-2">
+                <a href="#" id="checkout-btn" class="w-full inline-block text-center btn-primary">Proceed to Checkout</a>
+                <button id="clear-cart" class="w-full btn-ghost">Clear Cart</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ARIA live region for cart announcements (screen-reader only) -->
+    <div id="cart-live" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+
+    <script src="context/ui.js"></script>
+    <script src="context/cart.js"></script>
+</body>
+</html>

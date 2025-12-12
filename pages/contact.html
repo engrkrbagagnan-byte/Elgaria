@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ELGARIA Timepieces</title>
+    <meta name="description" content="Contact ELGARIA for product inquiries, orders, and support. Our specialists are ready to help with watch selections and service.">
+    <meta property="og:title" content="ELGARIA — Contact">
+    <meta property="og:description" content="Contact ELGARIA for product inquiries, orders, and support. Our specialists are ready to help with watch selections and service.">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-3xl font-serif-luxury tracking-wider"><a href="index.html">ELGARIA</a></h1>
+            <nav class="hidden md:flex space-x-8 text-lg font-light">
+                <a href="catalog.html" class="hover:text-amber-50">Catalog</a>
+                <a href="#" class="hover:text-amber-50">Brands</a>
+                <a href="contact.html" class="text-amber-50 border-b-2 border-amber-50">Contact</a>
+            </nav>
+            <div class="text-xl flex items-center">
+                <button id="cart-button" aria-label="Open cart" class="flex items-center focus:outline-none focus:ring-2 focus:ring-amber-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6.1A1 1 0 007 21h10a1 1 0 00.98-.8L20 13M7 13L5.4 5" />
+                    </svg>
+                    <span id="cart-count" class="cart-badge" style="display:none">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6 lg:p-12">
+        <div class="text-center mb-10">
+            <h2 class="text-5xl font-serif-luxury text-blue-900 mb-3">Speak with a Specialist</h2>
+            <p class="text-lg text-gray-600">We are dedicated to providing expert advice and service.</p>
+        </div>
+
+        <div class="bg-white p-8 md:p-12 rounded-lg shadow-2xl border-t-8 border-blue-900">
+            <form action="#" method="POST" class="grid grid-cols-1 gap-6">
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 border p-3 rounded-md focus:ring-blue-900 focus:border-blue-900">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 border p-3 rounded-md focus:ring-blue-900 focus:border-blue-900">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                    <select id="subject" name="subject" class="mt-1 block w-full border-gray-300 border p-3 rounded-md focus:ring-blue-900 focus:border-blue-900 bg-white">
+                        <option>General Inquiry</option>
+                        <option>Order Support</option>
+                        <option>Warranty Claim</option>
+                        <option>Product Information</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="mt-1 block w-full border-gray-300 border p-3 rounded-md focus:ring-blue-900 focus:border-blue-900"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-900 text-white py-3 mt-4 text-lg font-semibold rounded-md hover:bg-gray-800 transition tracking-wider">
+                    Send Inquiry
+                </button>
+            </form>
+        </div>
+        
+        <div class="mt-10 grid md:grid-cols-3 gap-6 text-center">
+            <div class="bg-amber-50 p-6 rounded-lg">
+                <p class="text-xl font-serif-luxury text-blue-900">Email</p>
+                <p class="mt-1 text-sm">support@elgaria.com</p>
+            </div>
+            <div class="bg-amber-50 p-6 rounded-lg">
+                <p class="text-xl font-serif-luxury text-blue-900">Phone</p>
+                <p class="mt-1 text-sm">+1 (555) 123-4567</p>
+            </div>
+            <div class="bg-amber-50 p-6 rounded-lg">
+                <p class="text-xl font-serif-luxury text-blue-900">Showroom</p>
+                <p class="mt-1 text-sm">Appointments Only</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6 mt-12">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            &copy; 2025 ELGARIA Timepieces. <a href="policy.html" class="hover:text-white">Policies</a>.
+        </div>
+    </footer>
+    <!-- Cart overlay + drawer (shared UI) -->
+    <div id="cart-overlay"></div>
+    <aside id="cart-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cart-title" class="">
+        <div class="cart-header flex items-center justify-between">
+            <h3 id="cart-title" class="text-lg font-semibold">Your Cart</h3>
+            <button id="cart-close" aria-label="Close cart" class="text-gray-500 hover:text-gray-800">✕</button>
+        </div>
+        <div class="cart-body"></div>
+        <div class="cart-footer">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-sm text-gray-600">Subtotal</span>
+                <strong id="cart-subtotal">$0.00</strong>
+            </div>
+            <div class="space-y-2">
+                <a href="#" id="checkout-btn" class="w-full inline-block text-center btn-primary">Proceed to Checkout</a>
+                <button id="clear-cart" class="w-full btn-ghost">Clear Cart</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ARIA live region for cart announcements (screen-reader only) -->
+    <div id="cart-live" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+
+    <script src="context/ui.js"></script>
+    <script src="context/cart.js"></script>
+</body>
+</html>

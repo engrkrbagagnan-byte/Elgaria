@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELGARIA - Time Defined by Excellence</title>
+    <meta name="description" content="ELGARIA — precision timepieces and curated luxury watches. Explore our collection of chronographs, dress watches, and limited editions.">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:title" content="ELGARIA — Luxury Watch Store">
+    <meta property="og:description" content="Precision timepieces and curated luxury watches. Explore our collection of chronographs, dress watches, and limited editions.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/placeholder_watch_1.jpg">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- use root stylesheet -->
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-3xl font-serif-luxury tracking-wider">
+                <a href="index.html">ELGARIA</a>
+            </h1>
+            <nav class="hidden md:flex space-x-8 text-lg font-light">
+                <a href="catalog.html" class="hover:text-amber-50 transition duration-300">Catalog</a>
+                <a href="#" class="hover:text-amber-50 transition duration-300">Brands</a>
+                <a href="contact.html" class="hover:text-amber-50 transition duration-300">Contact</a>
+            </nav>
+            <div class="text-xl flex items-center">
+                <button id="cart-button" aria-label="Open cart" class="flex items-center focus:outline-none focus:ring-2 focus:ring-amber-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6.1A1 1 0 007 21h10a1 1 0 00.98-.8L20 13M7 13L5.4 5" />
+                    </svg>
+                    <span id="cart-count" class="cart-badge" style="display:none">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-cover bg-center overflow-hidden" style="will-change:transform;">
+            <div data-parallax="hero" class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1604242692760-2f7b0c26856d?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); will-change:transform;">
+            </div>
+            <div class="absolute inset-0 bg-blue-900 opacity-30"></div>
+        </div>
+        
+        <div class="relative max-w-4xl text-center text-white z-10">
+            <h2 class="text-6xl md:text-8xl font-serif-luxury mb-6 tracking-tight animate-on-scroll">
+                Time Defined by Excellence
+            </h2>
+            <p class="text-xl md:text-2xl font-light mb-10 text-amber-50 animate-on-scroll" data-delay="120">
+                Discover the exclusive collection where precision meets enduring style.
+            </p>
+            <a href="catalog.html" class="hero-cta btn-primary text-blue-900" style="display:inline-block;margin-top:6px;">
+                Explore the Collection
+            </a>
+        </div>
+    </section>
+
+    <section class="bg-amber-50 py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-4xl font-serif-luxury text-center mb-12 text-blue-900">Featured Masterpieces</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1549488344-ecc9926d8b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                                            srcset="https://images.unsplash.com/photo-1549488344-ecc9926d8b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400 400w, https://images.unsplash.com/photo-1549488344-ecc9926d8b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800 800w, https://images.unsplash.com/photo-1549488344-ecc9926d8b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200 1200w"
+                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                            loading="lazy"
+                                            width="1200"
+                                            height="800"
+                                            alt="Classic Diver Watch"
+                                            class="w-full h-80 object-cover border-b"
+                                        >
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-serif-luxury text-blue-900">The Ocean Sapphire</h4>
+                        <p class="text-gray-600 mt-1 mb-3">$1,850</p>
+                        <div class="mt-3 flex items-center justify-center space-x-3">
+                            <a href="catalog.html" class="text-sm font-medium text-blue-900 border-b border-blue-900 hover:border-gray-500">View Details</a>
+                            <button class="btn-primary text-sm" data-id="ocean-sapphire" data-name="The Ocean Sapphire" data-price="1850" data-image="https://images.unsplash.com/photo-1549488344-ecc9926d8b6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll" data-delay="80">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1620023640236-07f7c223c6c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                                            srcset="https://images.unsplash.com/photo-1620023640236-07f7c223c6c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400 400w, https://images.unsplash.com/photo-1620023640236-07f7c223c6c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800 800w, https://images.unsplash.com/photo-1620023640236-07f7c223c6c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200 1200w"
+                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                            loading="lazy"
+                                            width="1200"
+                                            height="800"
+                                            alt="Dress Watch"
+                                            class="w-full h-80 object-cover border-b"
+                                        >
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-serif-luxury text-blue-900">The Heritage Automatic</h4>
+                        <p class="text-gray-600 mt-1 mb-3">$2,500</p>
+                        <div class="mt-3 flex items-center justify-center space-x-3">
+                            <a href="catalog.html" class="text-sm font-medium text-blue-900 border-b border-blue-900 hover:border-gray-500">View Details</a>
+                            <button class="btn-primary text-sm" data-id="heritage-automatic" data-name="The Heritage Automatic" data-price="2500" data-image="https://images.unsplash.com/photo-1620023640236-07f7c223c6c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll" data-delay="160">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1622979262334-3112a20b8b64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                                            srcset="https://images.unsplash.com/photo-1622979262334-3112a20b8b64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400 400w, https://images.unsplash.com/photo-1622979262334-3112a20b8b64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800 800w, https://images.unsplash.com/photo-1622979262334-3112a20b8b64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200 1200w"
+                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                            loading="lazy"
+                                            width="1200"
+                                            height="800"
+                                            alt="Pilot Watch"
+                                            class="w-full h-80 object-cover border-b"
+                                        >
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-serif-luxury text-blue-900">The Aviator Chrono</h4>
+                        <p class="text-gray-600 mt-1 mb-3">$1,200</p>
+                        <div class="mt-3 flex items-center justify-center space-x-3">
+                            <a href="catalog.html" class="text-sm font-medium text-blue-900 border-b border-blue-900 hover:border-gray-500">View Details</a>
+                            <button class="btn-primary text-sm" data-id="aviator-chrono" data-name="The Aviator Chrono" data-price="1200" data-image="https://images.unsplash.com/photo-1622979262334-3112a20b8b64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-xl font-serif-luxury mb-3 text-amber-50">ELGARIA</h4>
+                <p class="text-sm">Precision, Heritage, and Style. Since 2025.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-3 text-white">Shop</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="catalog.html" class="hover:text-white">All Watches</a></li>
+                    <li><a href="#" class="hover:text-white">New Arrivals</a></li>
+                    <li><a href="#" class="hover:text-white">Luxury Editions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-3 text-white">Customer Service</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                    <li><a href="policy.html" class="hover:text-white">Shipping & Returns</a></li>
+                    <li><a href="policy.html" class="hover:text-white">Warranty</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-3 text-white">Follow Us</h4>
+                <p class="text-sm">Join our community of collectors.</p>
+            </div>
+        </div>
+        <div class="text-center mt-10 text-sm border-t border-gray-700 pt-6">
+            &copy; 2025 ELGARIA Timepieces. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Cart overlay + drawer -->
+    <div id="cart-overlay"></div>
+    <aside id="cart-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cart-title" class="">
+        <div class="cart-header flex items-center justify-between">
+            <h3 id="cart-title" class="text-lg font-semibold">Your Cart</h3>
+            <button id="cart-close" aria-label="Close cart" class="text-gray-500 hover:text-gray-800">✕</button>
+        </div>
+        <div class="cart-body"></div>
+        <div class="cart-footer">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-sm text-gray-600">Subtotal</span>
+                <strong id="cart-subtotal">$0.00</strong>
+            </div>
+            <div class="space-y-2">
+                <a href="#" id="checkout-btn" class="w-full inline-block text-center btn-primary">Proceed to Checkout</a>
+                <button id="clear-cart" class="w-full btn-ghost">Clear Cart</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ARIA live region for cart announcements (screen-reader only) -->
+    <div id="cart-live" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+
+    <script src="context/ui.js"></script>
+    <script src="context/cart.js"></script>
+
+    <script>
+    // IntersectionObserver for animate-on-scroll (keeps animations lightweight)
+    (function(){
+      const ioTargets = document.querySelectorAll('.animate-on-scroll');
+      if (!ioTargets.length) return;
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      ioTargets.forEach(t => io.observe(t));
+    })();
+    </script>
+
+</body>
+</html>
